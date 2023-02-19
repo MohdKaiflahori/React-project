@@ -1,0 +1,58 @@
+* {
+  margin: 5px;
+  padding: 5px;
+}
+h3{
+  margin: 20px;
+  padding: 10px;
+}
+
+p{
+  margin: 15px;
+  padding: 15px;
+}
+button{
+  margin: 5px;
+  padding: 7px;
+}
+.box-1 {
+  width: 33.33%;
+  border: 3px solid black;
+  border-radius: 15px;
+  margin-left: -35px;
+  color: white;
+  background-color: red;
+  height: 230px;
+  
+}
+.box-2 {
+  width: 33.33%;
+  border: 3px solid black;
+  border-radius: 15px;
+  color: white;
+  background-color: maroon;
+  height: 230px;
+}
+.box-3 {
+  width: 33.33%;
+  border: 3px solid black;
+  border-radius: 15px;
+  color: white;
+  background-color: blue;
+  height: 230px;
+}
+.box-1:hover {
+  background-color: transparent;
+  color: black;
+  border-color: red;
+}
+.box-2:hover{
+    background-color: transparent;
+    color: black;
+    border-color:  maroon;
+}
+.box-3:hover{
+    background-color: transparent;
+    color: black;
+    border-color: blue;
+}
