@@ -1,14 +1,12 @@
 /* eslint-disable max-len */
 /* eslint-disable import/no-named-as-default-member */
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 // eslint-disable-next-line import/no-named-as-default
 import SignUp from './SignUp';
 import './Form.css';
 import details from './details.json';
 
 export default function Form() {
-  const navigate = useNavigate();
   const [data, setData] = useState({
     Name: '',
     number: '',
@@ -24,7 +22,6 @@ export default function Form() {
   };
   function submit(event) {
     event.preventDefault();
-    navigate('/Api');
     console.log(data);
     setData({
       Name: '',
