@@ -1,0 +1,55 @@
+[
+  {
+    "id": "Name",
+    "name": "Name",
+    "type": "text",
+    "label": "Name",
+    "placeholder":"Name"
+  },
+  {
+    "id":"number",
+    "name":"number",
+    "type":"number",
+    "label":"Mobile-no",
+    "placeholder":"Mobile-No"
+
+  },
+  {
+    "id": "state",
+    "name": "state",
+    "type": "text",
+    "label": "State",
+    "placeholder":"State"
+
+  },
+  {
+    "id": "male",
+    "name": "gender",
+    "type": "radio",
+    "label": "Male",
+    "value":"Male"
+
+  },
+  {
+    "id": "female",
+    "name": "gender",
+    "type": "radio",
+    "label": "Female",
+    "value":"Female"
+
+  },
+  {
+    "id": "address",
+    "name": "address",
+    "type": "text",
+    "label": "Address",
+    "placeholder":"Address"
+
+  },
+  {
+    "id": "submit",
+    "name": "submit",
+    "type": "submit",
+    "label": ""
+  }
+]
