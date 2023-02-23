@@ -5,7 +5,7 @@ import React from 'react';
 export default function SignUp(props) {
   // eslint-disable-next-line react/prop-types
   const {
-    type, id, name, placeholder, handleChange,
+    type, id, name, placeholder, handleChange, value,
   } = props;
   function basicValidation(e) {
     if (type === 'number') {
@@ -33,6 +33,7 @@ export default function SignUp(props) {
         onChange={handleChange}
         id={id}
         name={name}
+        value={value}
         placeholder={placeholder}
         onKeyDown={basicValidation}
         min={1}

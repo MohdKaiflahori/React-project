@@ -1,7 +1,7 @@
 [
   {
-    "id": "Name",
-    "name": "Name",
+    "id": "name",
+    "name": "name",
     "type": "text",
     "label": "Name",
     "placeholder":"Name"
@@ -27,7 +27,7 @@
     "name": "gender",
     "type": "radio",
     "label": "Male",
-    "value":"Male"
+    "value":"male"
 
   },
   {
@@ -35,7 +35,7 @@
     "name": "gender",
     "type": "radio",
     "label": "Female",
-    "value":"Female"
+    "value":"female"
 
   },
   {

@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-syntax */
 /* eslint-disable max-len */
 /* eslint-disable import/no-named-as-default-member */
 import React, { useState } from 'react';
@@ -8,7 +9,7 @@ import details from './details.json';
 
 export default function Form() {
   const [data, setData] = useState({
-    Name: '',
+    name: '',
     number: '',
     gender: '',
     state: '',
@@ -22,9 +23,12 @@ export default function Form() {
   };
   function submit(event) {
     event.preventDefault();
+    for (const iterator of event.target) {
+      if (iterator.type === 'radio') iterator.checked = false;
+    }
     console.log(data);
     setData({
-      Name: '',
+      name: '',
       number: '',
       gender: '',
       state: '',
@@ -42,7 +46,7 @@ export default function Form() {
               <SignUp
                 handleChange={handleChange}
                 type={x.type}
-                value={data[x.value]}
+                value={x.type === 'radio' ? x.value : data[x.name]}
                 name={x.name}
                 id={x.id}
                 placeholder={x.placeholder}
