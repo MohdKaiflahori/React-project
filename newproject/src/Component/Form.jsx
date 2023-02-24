@@ -27,12 +27,13 @@ export default function Form() {
   };
   function submit(event) {
     event.preventDefault();
-    for (const iterator of event.target) {
-      if (iterator.type === 'radio') iterator.checked = false;
-    }
     if (Object.values(data).some((v) => v === '')) {
       alert('Please fill the details of form');
     }
+    for (const iterator of event.target) {
+      if (iterator.type === 'radio') iterator.checked = false;
+    }
+
     // navigate('/user');
     console.log(data);
     setData({
