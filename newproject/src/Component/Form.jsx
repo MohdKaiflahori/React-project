@@ -1,13 +1,17 @@
+/* eslint-disable no-alert */
 /* eslint-disable no-restricted-syntax */
 /* eslint-disable max-len */
 /* eslint-disable import/no-named-as-default-member */
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 // eslint-disable-next-line import/no-named-as-default
 import SignUp from './SignUp';
 import './Form.css';
 import details from './details.json';
+// import User from './User';
 
 export default function Form() {
+  const navigate = useNavigate();
   const [data, setData] = useState({
     name: '',
     number: '',
@@ -26,6 +30,10 @@ export default function Form() {
     for (const iterator of event.target) {
       if (iterator.type === 'radio') iterator.checked = false;
     }
+    if (Object.values(data).some((v) => v === '')) {
+      alert('Please fill the details of form');
+    }
+    // navigate('/user');
     console.log(data);
     setData({
       name: '',
@@ -55,6 +63,7 @@ export default function Form() {
             </label>
           ))}
         </form>
+
       </div>
     </>
   );

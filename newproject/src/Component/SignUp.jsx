@@ -1,3 +1,4 @@
+/* eslint-disable no-alert */
 /* eslint-disable max-len */
 /* eslint-disable react/prop-types */
 import React from 'react';
@@ -8,7 +9,7 @@ export default function SignUp(props) {
     type, id, name, placeholder, handleChange, value,
   } = props;
   function basicValidation(e) {
-    if (type === 'number') {
+    if (type === 'number' && value.length === 10) {
       const ch = String.fromCharCode(e.which);
       // console.log(ch);
       if (

@@ -4,6 +4,7 @@ import {
 } from 'react-router-dom';
 import Ui from './Component/Ui';
 import Form from './Component/Form';
+import User from './Component/User';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
 )}
           />
           <Route path="/login" element={<Form />} />
+          <Route exact path="/user" element={<User />} />
         </Routes>
       </Router>
 
